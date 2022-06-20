@@ -66,5 +66,29 @@ For forwards compatibility, a special `Unknown<InterfaceName>` type is generated
 ##### Unions
 For forwards compatibility, the generated `std::variant` adds `std::monostate` as a possible type to handle unknown types that the client is unaware of.
 
+## Build Instructions
+### MacOS
+#### Download CMake
+1. Go to [CMake](https://cmake.org/download/) and download and install CMake tool for your version of MacOS.
+2. Launch CMake tool and in the `Where is the source code` input provide root of your CaffQL repo (i.e. `~/workplace/CaffQL`)
+3. In the `Where to build the binaries` input, specify the build output (i.e `~/CaffQL/build`) 
+4. Click `Configure`button. Accept the prompt to create `build` directory if it doesn't exist
+5. Accept default options for the generator `Unix Makefiles` and `Use default native compilers`. CMake will generate the list of parameters for your system configuration. 
+6. Click `Generate`. CMake tool will generate the list of files required for the build.
+7. Go to `build` directory and run `make`
+```
+$ cd build
+$ make
+```
+8. Look for the `build/caffql` executable being created
+9. Copy `caffql` executable to `usr/local/bin`
+```
+[build] $ cp caffql /usr/local/bin
+```
+9. Try running `caffql`
+```
+[build] $ caffql --help
+```
+You should see the list of options of how to use the caffql tool. 
 
 
