@@ -71,7 +71,7 @@ For forwards compatibility, the generated `std::variant` adds `std::monostate` a
 #### Download CMake
 1. Go to [CMake](https://cmake.org/download/) and download and install CMake tool for your version of MacOS.
 2. Launch CMake tool and in the `Where is the source code` input provide root of your CaffQL repo (i.e. `~/workplace/CaffQL`)
-3. In the `Where to build the binaries` input, specify the build output (i.e `~/CaffQL/build`) 
+3. In the `Where to build the binaries` input, specify the build output (i.e `~/workplace/CaffQL/build`) 
 4. Click `Configure`button. Accept the prompt to create `build` directory if it doesn't exist
 5. Accept default options for the generator `Unix Makefiles` and `Use default native compilers`. CMake will generate the list of parameters for your system configuration. 
 6. Click `Generate`. CMake tool will generate the list of files required for the build.
